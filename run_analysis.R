@@ -51,7 +51,7 @@ invisible(mapply(f, X = testfiles, Y = trainfiles))
 #identifying variables that include "mean" or "std" in the name
 selection <-
   features %>%
-  filter(grepl("mean|std", V2))
+  filter(grepl("mean\\(|std\\(", V2))
 #selecting only the variables related to the mean or standard deviation
 data <- X %>%
   select(pull(selection, V1))
@@ -72,4 +72,4 @@ tidydata <-
   group_by(subject, activity) %>%
   summarise_all(mean, na.rm = TRUE)
 
-write.table("tidy.txt", row.name = FALSE)
+write.table(tidydata, "tidydata.txt", row.name = FALSE)
