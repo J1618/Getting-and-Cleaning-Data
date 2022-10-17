@@ -1,4 +1,4 @@
-# Getting and Cleaning Data Course Project
+''# Getting and Cleaning Data Course Project
 
 ### Jonathan Poblete
 
@@ -15,7 +15,7 @@ The original data was separated in two sets for training and testing a machine l
 -   run_analysis.R\
     R script that processes the data.
 -   tidydata.txt\
-    Text file with the output of the script.
+    Text file with the output of the script, which can be read into R with the command 'read.table(header=TRUE)'.
 -   readme.md
 -   codebook.md\
     File with descriptions for every variable included in the tidy data set.
