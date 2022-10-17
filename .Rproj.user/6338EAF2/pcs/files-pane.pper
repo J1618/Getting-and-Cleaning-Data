@@ -1,0 +1,9 @@
+{
+    "sortOrder": [
+        {
+            "columnIndex": 2,
+            "ascending": false
+        }
+    ],
+    "path": "~/Archivos/Codes/R/Coursera/GettingAndCleaningData/UCI HAR Dataset/train"
+}
