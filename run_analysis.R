@@ -13,7 +13,7 @@ f <- function(X, Y) {
     colClasses = "numeric"
   )
   dataY = read.delim(
-    X,
+    Y,
     header = FALSE,
     sep = "",
     strip.white = TRUE,
